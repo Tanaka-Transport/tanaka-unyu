@@ -286,12 +286,19 @@ footer {
   opacity: 0.8;
 }
 
-/* スマホ時のナビを確実に1行に収める */
+/* スマホ時のナビを確実に1行に収める（完全版） */
 @media (max-width: 768px) {
   nav ul {
+    display: flex;
+    overflow-x: auto;      /* ← 横スクロールを許可 */
+    white-space: nowrap;   /* ← 折り返し禁止（最重要） */
+    -webkit-overflow-scrolling: touch;
     font-size: 0.75rem;
     gap: 6px;
-    flex-wrap: nowrap;
+  }
+
+  nav ul::-webkit-scrollbar {
+    display: none; /* ← スクロールバー非表示で見た目が綺麗 */
   }
 }
 
@@ -309,6 +316,6 @@ footer {
 /* PC版のヒーロー画像位置調整（下が切れないように） */
 @media (min-width: 769px) {
   .hero {
-   background-position: center 40%;
+   background-position: center 35%;
   }
 }
