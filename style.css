@@ -324,3 +324,10 @@ footer {
   font-weight: bold;
   white-space: nowrap; /* ← これが最重要 */
 }
+/* スマホでヘッダーが横スクロールを邪魔しないようにする */
+@media (max-width: 768px) {
+  header {
+    overflow-x: visible; /* ← これが最重要！ */
+  }
+}
+
