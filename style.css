@@ -35,6 +35,17 @@ nav ul {
   gap: 16px;
   font-size: 0.9rem;
 }
+/* ヘッダーの文字サイズを統一 */
+nav ul {
+  font-size: 1.1rem; /* PC用の標準サイズ */
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    font-size: 1rem; /* スマホ用に少し小さく */
+  }
+}
+
 nav a {
   color: #fff;
   text-decoration: none;
@@ -42,6 +53,7 @@ nav a {
 nav a:hover {
   text-decoration: underline;
 }
+
 
 /* ===========================
    ヒーロー画像
@@ -228,6 +240,13 @@ footer {
   object-fit: cover; /* ← 青空を自然に見せたまま上下を調整 */
   display: block;
 }
+.footer-banner img {
+  width: 100%;
+  height: auto;      /* ← 自動にする */
+  max-height: 240px; /* ← 必要なら上限だけ設定 */
+  object-fit: cover;
+}
+
 .access-image {
   width: 100%;
   max-width: 900px;
