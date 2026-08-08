@@ -309,4 +309,9 @@ footer {
     display: none; /* ← スクロールバーを非表示（見た目が綺麗） */
   }
 }
+.logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+  white-space: nowrap; /* ← これが重要！折り返し禁止 */
+}
 
