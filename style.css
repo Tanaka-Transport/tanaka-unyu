@@ -286,12 +286,12 @@ footer {
   opacity: 0.8;
 }
 
-/* スマホ時のナビ調整（1行に収める） */
+/* スマホ時のナビを確実に1行に収める */
 @media (max-width: 768px) {
   nav ul {
-    font-size: 0.85rem;   /* ← 少し小さくする */
-    gap: 10px;            /* ← 余白を詰める */
+    font-size: 0.75rem;   /* ← さらに小さくする */
+    gap: 6px;             /* ← 余白をもっと詰める */
+    flex-wrap: nowrap;    /* ← 折り返し禁止（重要） */
   }
 }
-
 
