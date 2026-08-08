@@ -325,9 +325,30 @@ footer {
   font-size: 1.2rem;
   font-weight: bold;
   white-space: nowrap; /* ← これが最重要 */
+}
+
 @media (max-width: 600px) {
   .hero-title {
     font-size: 2.2rem;
   }
 }
+
+@media (max-width: 768px) {
+  .header-inner {
+    flex-direction: column;   /* ← ロゴとメニューを縦並びにする */
+    align-items: flex-start;  /* ← 左寄せ */
+    gap: 6px;                 /* ← 少し余白 */
+  }
+
+  .logo {
+    font-size: 1rem;          /* ← スマホでは少し小さく */
+    white-space: nowrap;      /* ← 会社名が途中で折れないように */
+  }
+
+  nav ul {
+    width: 100%;              /* ← メニューを横いっぱいに */
+    justify-content: flex-start;
+  }
+}
+
 
