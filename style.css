@@ -294,7 +294,7 @@ footer {
     white-space: nowrap;   /* ← 折り返し禁止（最重要） */
     -webkit-overflow-scrolling: touch;
     font-size: 0.75rem;
-    gap: 6px;
+    gap: 4px;
   }
 
   nav ul::-webkit-scrollbar {
@@ -316,6 +316,11 @@ footer {
 /* PC版のヒーロー画像位置調整（下が切れないように） */
 @media (min-width: 769px) {
   .hero {
-   background-position: center 35%;
+   background-position: center 30%;
   }
+}
+.logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+  white-space: nowrap; /* ← これが最重要 */
 }
