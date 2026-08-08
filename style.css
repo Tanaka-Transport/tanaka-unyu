@@ -290,29 +290,31 @@ footer {
 @media (max-width: 768px) {
   nav ul {
     display: flex;
-    overflow-x: auto;      /* ← 横スクロールを許可 */
-    white-space: nowrap;   /* ← 折り返し禁止（最重要） */
+    overflow-x: auto;      /* 横スクロールを許可 */
+    white-space: nowrap;   /* 折り返し禁止（最重要） */
     -webkit-overflow-scrolling: touch;
     font-size: 0.75rem;
     gap: 4px;
   }
 
   nav ul::-webkit-scrollbar {
-    display: none; /* ← スクロールバー非表示で見た目が綺麗 */
+    display: none; /* スクロールバー非表示 */
   }
 }
 
-/* スマホで横スクロールナビが本文を押し出さないようにする */
+/* スマホでヘッダーが横スクロールを邪魔しないようにする（最終版） */
 @media (max-width: 768px) {
-  html, body {
-    overflow-x: hidden;
+  main, footer {
+    max-width: 100vw;
+    overflow-x: hidden;   /* 本文とフッターは横スクロール禁止でOK */
   }
 
-  main, header, footer {
-    max-width: 100vw;
-    overflow-x: hidden;
+  header {
+    overflow-x: visible;  /* ← ヘッダーだけ横スクロールを許可（最重要） */
   }
 }
+
+
 /* PC版のヒーロー画像位置調整（下が切れないように） */
 @media (min-width: 769px) {
   .hero {
@@ -323,11 +325,5 @@ footer {
   font-size: 1.2rem;
   font-weight: bold;
   white-space: nowrap; /* ← これが最重要 */
-}
-/* スマホでヘッダーが横スクロールを邪魔しないようにする */
-@media (max-width: 768px) {
-  header {
-    overflow-x: visible; /* ← これが最重要！ */
-  }
-}
+
 
