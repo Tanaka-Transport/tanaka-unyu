@@ -314,4 +314,15 @@ footer {
   font-weight: bold;
   white-space: nowrap; /* ← これが重要！折り返し禁止 */
 }
+/* スマホで横スクロールナビが本文を押し出さないようにする */
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden; /* ← 横はみ出しを強制的に禁止 */
+  }
+
+  main, header, footer {
+    max-width: 100vw;   /* ← スマホ画面幅に固定 */
+    overflow-x: hidden; /* ← 横スクロールを本文側で禁止 */
+  }
+}
 
