@@ -325,5 +325,9 @@ footer {
   font-size: 1.2rem;
   font-weight: bold;
   white-space: nowrap; /* ← これが最重要 */
-
+@media (max-width: 600px) {
+  .hero-title {
+    font-size: 2.2rem;
+  }
+}
 
