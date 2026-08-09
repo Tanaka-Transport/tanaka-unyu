@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+<!-- ホーム -->
+<url>
+<loc>https://tanaka-transport.github.io/tanaka-unyu/index.html</loc>
+<priority>1.0</priority>
+</url>
+
+<!-- 事業内容 -->
+<url>
+<loc>https://tanaka-transport.github.io/tanaka-unyu/business.html</loc>
+<priority>0.8</priority>
+</url>
+
+<!-- アクセス -->
+<url>
+<loc>https://tanaka-transport.github.io/tanaka-unyu/access.html</loc>
+<priority>0.8</priority>
+</url>
+
+<!-- お問い合わせ -->
+<url>
+<loc>https://tanaka-transport.github.io/tanaka-unyu/contact.html</loc>
+<priority>0.8</priority>
+</url>
+
+<!-- 採用情報 -->
+<url>
+<loc>https://tanaka-transport.github.io/tanaka-unyu/recruit.html</loc>
+<priority>0.8</priority>
+</url>
+
+</urlset>
