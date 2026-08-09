@@ -352,3 +352,20 @@ footer {
 }
 
 
+/* ===========================
+   採用フォーム（Googleフォーム埋め込み）
+=========================== */
+.recruit-form iframe {
+  width: 100%;
+  max-width: 900px;   /* ← 本文幅に合わせる */
+  height: 1000px;     /* ← フォームが切れない高さに調整 */
+  border: 0;
+  display: block;
+  margin: 0 auto;     /* ← 中央寄せ */
+}
+
+@media (max-width: 768px) {
+  .recruit-form iframe {
+    height: 1200px;   /* ← スマホは縦長なので余裕を持たせる */
+  }
+}
